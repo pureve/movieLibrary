@@ -22,5 +22,6 @@ All columns should be sortable
 
 2) Start the local server using the command below
 ```bash
-nodemon app
+node app
 ```
+3) Go to 'localhost:4000' through your browser
