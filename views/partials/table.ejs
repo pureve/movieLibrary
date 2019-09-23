@@ -1,0 +1,18 @@
+<table>
+<tr>
+  <th><a href="/sortByName">Name </a><a href="/sortByName">↑ </a><a href="/sortByNameNeg">↓</a></th>
+  <th><a href="/sortByDate">Release date </a><a href="/sortByDate">↑ </a><a href="/sortByDateNeg">↓</a></th>
+  <th><a href="/sortByDuration">Duration </a><a href="/sortByDuration">↑ </a><a href="/sortByDurationNeg">↓</a></th>
+  <th><a href="/sortByActors">Actors </a><a href="/sortByActors">↑ </a><a href="/sortByActorsNeg">↓</a></th>
+  <th><a href="/sortByRating">Rating </a><a href="/sortByRating">↑ </a><a href="/sortByRatingNeg">↓</a></th>
+</tr>
+<% movies.forEach(function(movie){ %>
+  <tr>
+     <td> <a class='tableAnchor' href="/more/<%= movie._id %>"><%= movie.name %></a></td>
+     <td> <%= movie.releaseDate.getFullYear() %> </td>
+     <td> <%= movie.duration %> min </td>
+     <td> <%= movie.actors %> </td>
+     <td> <%= movie.rating %> </td>
+  </tr>
+<% }); %>
+</table>

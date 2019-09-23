@@ -1,0 +1,13 @@
+<div class="topnav">
+  <a class="active" href="/">Home</a>
+  <%if(logButton){%>
+  <a href="/signin">Sign in</a>
+  <div class="SignUpButton">
+    <a href="/signup">Sign up</a>
+  </div>
+  <%}%>
+  <%if(userLogged){%>
+  <a class="topnav" href="/logout">Logout</a>
+  <p id="userName">Logged in as <%=username%></p>
+  <%}%>
+</div>

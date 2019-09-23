@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Welcome to Movie Library</title>
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="/assets/style.css">
+</head>
+
+<body>
+	<%- include('partials/nav.ejs',{logButton: logButton ,userLogged: userLogged,username: username}); %>
+	<%- include('partials/table.ejs',{movies: movies}); %>
+	<div class="Anchor">
+		<a href="/addmovie">Add a Movie?</a>
+	</div>
+</body>
+
+</html>

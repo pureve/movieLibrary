@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Edit comment</title>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="/assets/style.css">
+	</head>
+
+	<body>
+  <%include partials/nav.ejs%>
+  <h1> You have already rated this movie "<%=movieName%>" </h1>
+  <p>If want to delete your comment
+  <a href="/delete/<%=movieId%>/<%=username%>"> click here! </a>
+  </p>
+	</body>
+
+</html>

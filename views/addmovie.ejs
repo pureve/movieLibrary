@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Add Movie</title>
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="/assets/style.css">
+</head>
+
+<body>
+	<%include partials/nav.ejs%>
+	<h1>Add a Movie</h1>
+	<form class="AddMovie" method="POST" action="/addmovie" method="post">
+		<input type="text" name="movieName" placeholder="Name of the Movie"> <br>
+		<input type="number" name="duration" placeholder="Duration"> <br>
+		<input type="date" name="releaseDate" placeholder="Release Date"><br>
+		<input type="text" name="actors" placeholder="Actors"><br>
+		<button type="submit" name="add-submit">Add!</button>
+	</form>
+</body>
+
+</html>

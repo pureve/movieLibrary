@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Edit Movie</title>
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="/assets/style.css">
+</head>
+
+<body>
+	<%include partials/nav.ejs%>
+	<h1>Edit the Movie "<%=name%>"</h1>
+	<form id="editmovie" method="POST" action="/edit/<%=movieId%>" method="post">
+		<input type="text" name="movieName" value=" <%=name%> "> <br>
+		<input type="number" name="duration" value=<%=duration%>> <br>
+		<input type="date" name="releaseDate" value=<%=date%>><br>
+		<input type="text" name="actors" value="<%=actors%>"><br>
+		<button type="submit" name="add-submit">Edit!</button>
+	</form>
+
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Sign Up</title>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="/assets/style.css">
+	</head>
+
+	<body>
+  <%include partials/nav.ejs%>
+  <h1>Sign Up</h1>
+  <form class="SignUp" method="POST" action="/signup" method="post">
+    <input type="text" name="username" placeholder="Username"> <br>
+    <input type="text" name="email" placeholder="E-mail"> <br>
+		<input type="password" name="password" placeholder="Password"><br>
+    <input type="password" name="passwordConf" placeholder="Repeat Password"><br>
+    <button type="submit" name="signup-submit">Signup</button>
+  </form>
+	</body>
+
+</html>

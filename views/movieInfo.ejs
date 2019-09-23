@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<title><%=name %></title>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="/assets/style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+
+	<body>
+  <%include partials/nav.ejs%>
+
+  <div class="card">
+  <h1> <%=name %> </h1>
+  <p class="title"> <%=actors %> </p>
+  <p> Release: <%=relDate %> </p>
+  <p> Duration: <%=duration %> Minutes</p>
+  <p> Rating: <%= rating%> / 5 </p>
+	<% if(userEdit){ %>
+		<a href="/edit/<%=movieId %>">Edit</a>
+		<a href="/delete/<%=movieId %>">Delete</a>
+	<% } %>
+  </div>
+
+  <div class="comments">
+		<% if(comments != null){ %>
+    <% comments.forEach(function(comment){ %>
+      <div class="comment">
+        <p> <%=comment.comment %> </p>
+        <div class="commentUser"><i> said <%=comment.user %> &nbsp</i>
+					<% for(var i=0; i<comment.rate ;i++){ %>
+							<span class="fa fa-star checked"></span>
+						<% } %>
+					<% for(var i=0; i<5-comment.rate ;i++){ %>
+							<span class="fa fa-star"></span>
+						<% } %>
+				</div>
+      </div>
+    <% }); }%>
+		<div class="comment">
+			<textarea name="comment" rows="3" cols="50" form="usrform" placeholder="Write your comment!"></textarea <br>
+			<form method="POST" action="/movieInfo/<%=movieId %>" method="post" id="usrform">
+				<input type="number" name="rating" min="1" max="5"  size="15" placeholder="Rating"> <br>
+				<input type="submit">
+				</form>
+				<br>
+
+		</div>
+  </div>
+	</body>
+</html>

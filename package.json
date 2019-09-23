@@ -1,0 +1,32 @@
+{
+  "name": "online_movie_library",
+  "version": "1.0.0",
+  "description": "online movie library on which users can share their favorite movies.",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "connect-mongo": "^3.0.0",
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "express-session": "^1.16.2",
+    "mongoose": "^5.7.1",
+    "nodemon": "^1.19.2",
+    "passport": "^0.4.0",
+    "passport-google-oauth20": "^2.0.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "webpack": "^4.40.2",
+    "webpack-dev-server": "^3.8.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "pureve",
+  "license": "ISC"
+}

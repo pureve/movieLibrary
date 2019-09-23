@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Sign in</title>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="/assets/style.css">
+	</head>
+
+	<body>
+  <%include partials/nav.ejs%>
+  <h1>Sign In</h1>
+  <form class="SignIn" method="POST" action="/signin" method="post">
+    <input type="text" name="email" placeholder="E-mail"> <br>
+		<input type="password" name="password" placeholder="Password"><br>
+    <button type="submit" name="signin-submit">Sign In</button>
+  </form>
+	</body>
+
+</html>
