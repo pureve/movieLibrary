@@ -24,4 +24,4 @@ All columns should be sortable
 ```bash
 node app
 ```
-3) Go to 'localhost:4000' through your browser
+3) Go to 'localhost:4000' through your internet browser
