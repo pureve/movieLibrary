@@ -6,14 +6,14 @@ The main features of this web app are:
 
 - Sign up/ login page for user management
 - Add, delete and edit movies
-- Users should be able to rate movies with comments (1-5 stars). A user should only be able rate a movie once.
+- Users van rate movies with comments (1-5 stars). A user can only rate a movie once.
 - Main Dashboard to show all movies which are stored in the database with following information:
 o Name
 o Release date
 o Duration
 o Actors
 o Average user rating (x/5 stars)
-All columns should be sortable
+All columns are sortable
 
 
 ## Installation
@@ -24,4 +24,4 @@ All columns should be sortable
 ```bash
 node app
 ```
-3) Go to 'localhost:4000' through your internet browser
+3) Go to local server through your internet browser
